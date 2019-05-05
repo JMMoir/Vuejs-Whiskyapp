@@ -11,7 +11,10 @@ export default {
   methods:{
     handleClick(){
       eventBus.$emit('whisky-selected', this.whisky)
-    }
+      eventBus.$emit('more-selected', this.whisky)
+    },
+
+
   }
 }
 </script>

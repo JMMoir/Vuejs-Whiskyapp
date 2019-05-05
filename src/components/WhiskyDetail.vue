@@ -3,8 +3,10 @@
     <div id='detailWrapper'>
     <h2>{{whisky.title}}</h2>
     <div class="whisky-details">
+      <p>Region: {{whisky.region}}</p>
       <p>Rating: {{whisky.rating}}</p>
       <img id='image':src="whisky.detail_img_url" alt="">
+      <router-link :to="{ name: 'more', params: {whisky} }">See more like this</router-link>
     </div>
   </div>
   </div>
